@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeb Restaurant &amp; Takeaway - Home</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #faf7f2; color: #333; line-height: 1.6; }
+    
+    /* Header & Navigation */
+    header { background: #7b1113; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .brand { font-size: 24px; font-weight: bold; color: #d4af37; text-transform: uppercase; letter-spacing: 1px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+    nav a { color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; transition: background 0.3s, color 0.3s; }
+    nav a:hover, nav a.active { background: #d4af37; color: #7b1113; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(123, 17, 19, 0.85), rgba(0,0,0,0.85)), url('4.jpg') center/cover no-repeat; color: white; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 2.8rem; color: #f5cf68; margin-bottom: 15px; font-family: Georgia, serif; }
+    .hero p { max-width: 750px; margin: 0 auto 25px; font-size: 1.15rem; color: #f4f4f4; }
+    .hero .btn { display: inline-block; background: #d4af37; color: #7b1113; padding: 12px 30px; font-weight: bold; text-decoration: none; border-radius: 25px; transition: transform 0.2s, background 0.3s; }
+    .hero .btn:hover { background: #ffffff; transform: translateY(-2px); }
+
+    /* Layout Sections */
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    .section-title { text-align: center; font-size: 2rem; color: #7b1113; margin-bottom: 30px; font-family: Georgia, serif; }
+
+    /* Featured Meal Card */
+    .featured-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; flex-direction: column; margin-bottom: 40px; border-left: 6px solid #d4af37; }
+    @media(min-width: 768px) { .featured-card { flex-direction: row; } }
+    .featured-card img { width: 100%; max-width: 500px; object-fit: cover; }
+    .featured-card-body { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+    .featured-card-body h3 { color: #7b1113; font-size: 1.6rem; margin-bottom: 12px; }
+    .price-tag { font-size: 1.4rem; color: #b22222; font-weight: bold; margin: 15px 0; }
+
+    /* Feature Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border-top: 4px solid #7b1113; }
+    .card h3 { color: #7b1113; margin-bottom: 10px; font-size: 1.25rem; }
+
+    /* Footer */
+    footer { background: #1c1c1c; color: #f4f4f4; text-align: center; padding: 30px 20px; font-size: 0.95rem; }
+    footer p { margin-bottom: 8px; }
+    footer .highlight { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="brand">Jeb Takeaway</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Welcome to Jeb Restaurant</h1>
+  <p>A welcoming and comfortable place where delicious food, quality service, and wonderful moments come together. Fresh and tasty meals prepared for you and your loved ones.</p>
+  <a href="menu.html" class="btn">Explore Our Menu</a>
+</div>
+
+<div class="container">
+  <h2 class="section-title">Our Featured Meal</h2>
+  <div class="featured-card">
+    <img src="goats muchomo.jfif" alt="Goats muchomo and chicken">
+    <div class="featured-card-body">
+      <h3>Jeb Special Chicken &amp; Goats Muchomo</h3>
+      <p>Enjoy our signature chicken and tender goats muchomo marinated for over 24 hours. Served with well-prepared kachumbari salads and matooke fingers on the side to beautifully suit your taste.</p>
+      <div class="price-tag">Price: UGX 9,000</div>
+      <a href="menu.html" class="btn" style="width: fit-content; text-decoration: none; background:#7b1113; color:#fff; padding:10px 20px; border-radius:5px;">Order Today</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">Why Choose Us?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Fresh &amp; Delicious Food</h3>
+      <p>We prepare our meals using fresh and carefully selected local ingredients to offer satisfying, healthy, and high-quality meals.</p>
+    </div>
+    <div class="card">
+      <h3>2. Friendly Service</h3>
+      <p>Our team is welcoming, respectful, and ready to provide hospitality that makes every guest feel at home.</p>
+    </div>
+    <div class="card">
+      <h3>3. Affordable Prices</h3>
+      <p>We offer wide food choices and refreshments at reasonable prices, allowing everyone to enjoy top quality dining on a budget.</p>
+    </div>
+  </div>
+
+  <div class="card" style="text-align: center; border-top: 4px solid #d4af37;">
+    <h3 style="color:#7b1113;">Opening Hours</h3>
+    <p><strong>Monday &ndash; Sunday:</strong> 08:00 AM &ndash; 08:00 PM</p>
+    <p style="margin-top: 10px;">Entebbe Nkumba, Kasenyi Road (1/2 km from main road)</p>
+  </div>
+</div>
+
+<footer>
+  <p class="highlight">JEB RESTAURANT &amp; TAKEAWAY</p>
+  <p>Good food. Good memories. Good moments.</p>
+  <p>&copy; 2026 Jeb Restaurant. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
