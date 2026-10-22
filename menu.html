@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Jeb Restaurant &amp; Takeaway</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf7f2; color: #333; line-height: 1.6; }
+    header { background: #7b1113; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .brand { font-size: 24px; font-weight: bold; color: #d4af37; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+    nav a { color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; }
+    nav a:hover, nav a.active { background: #d4af37; color: #7b1113; }
+
+    .banner { background: #7b1113; color: white; text-align: center; padding: 40px 20px; border-bottom: 4px solid #d4af37; }
+    .banner h1 { font-family: Georgia, serif; font-size: 2.5rem; color: #f5cf68; }
+    
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    
+    .menu-item { background: white; border-radius: 10px; padding: 22px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between; border-left: 5px solid #7b1113; }
+    .menu-item h3 { color: #7b1113; font-size: 1.25rem; margin-bottom: 8px; text-transform: capitalize; }
+    .menu-item p { color: #555; font-size: 0.95rem; margin-bottom: 12px; }
+    .menu-item .price { font-weight: bold; font-size: 1.15rem; color: #b22222; align-self: flex-start; background: #fff2f2; padding: 4px 12px; border-radius: 15px; }
+
+    .cta-box { text-align: center; background: white; margin-top: 40px; padding: 35px 20px; border-radius: 12px; border: 2px dashed #d4af37; }
+    .cta-box .btn { display: inline-block; background: #7b1113; color: white; padding: 12px 28px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 15px; }
+    .cta-box .btn:hover { background: #d4af37; color: #7b1113; }
+
+    footer { background: #1c1c1c; color: #f4f4f4; text-align: center; padding: 30px 20px; margin-top: 40px; }
+    footer .highlight { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="brand">Jeb Takeaway</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <h1>Our Tasty Menu</h1>
+  <p>Freshly prepared, seasoned to perfection, and served hot every day.</p>
+</div>
+
+<div class="container">
+  <div class="menu-grid">
+    <div class="menu-item">
+      <div>
+        <h3>Jeb Special Goats Muchomo &amp; Fries</h3>
+        <p>Tender grilled goats muchomo served with freshly tossed kachumbari and soft matooke fingers.</p>
+      </div>
+      <span class="price">UGX 14,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chips &amp; Chicken</h3>
+        <p>Crispy golden chips served with our signature seasoned chicken and fresh salads.</p>
+      </div>
+      <span class="price">UGX 13,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chips &amp; Liver</h3>
+        <p>Crispy chips served with well-marinated, succulent pan-fried beef liver.</p>
+      </div>
+      <span class="price">UGX 12,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chips &amp; Beef Stew</h3>
+        <p>Crispy chips paired with deeply rich, slow-simmered beef stew to suit your appetite.</p>
+      </div>
+      <span class="price">UGX 11,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chips &amp; Chaps</h3>
+        <p>Delicious chicken served with savory chaps and crunchy fresh salad.</p>
+      </div>
+      <span class="price">UGX 10,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chips Omelette</h3>
+        <p>Well-seasoned crispy chips wrapped with fluffy eggs and fresh greens.</p>
+      </div>
+      <span class="price">UGX 8,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Breakfast Katogo (Peas / Offals / Beef / Chicken)</h3>
+        <p>Spiced matooke fingers served with your choice of savory stew, fresh vegetables, and sliced avocado.</p>
+      </div>
+      <span class="price">UGX 5,000 &ndash; 8,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Black &amp; African Spiced Tea</h3>
+        <p>Hot, aromatic spiced tea or brewed coffee customized to your personal preference.</p>
+      </div>
+      <span class="price">UGX 3,000 / 4,000</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Fresh Smoothies &amp; Cold Drinks</h3>
+        <p>Chilled bottled juices, purified water, blended smoothies, and sodas.</p>
+      </div>
+      <span class="price">Affordable &amp; Fresh</span>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3>Planning a visit with family or friends?</h3>
+    <p>Reserve a table in advance or order ahead for seamless takeaway pickup.</p>
+    <a href="reservations.html" class="btn">Make A Reservation</a>
+  </div>
+</div>
+
+<footer>
+  <p class="highlight">JEB RESTAURANT</p>
+  <p>Good food. Good memories. Good moments.</p>
+  <p>Abayita Ababiri, Kasenyi Road | &copy; 2026 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

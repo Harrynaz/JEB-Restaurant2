@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews - Jeb Restaurant</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf7f2; color: #333; line-height: 1.6; }
+    header { background: #7b1113; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .brand { font-size: 24px; font-weight: bold; color: #d4af37; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+    nav a { color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; }
+    nav a:hover, nav a.active { background: #d4af37; color: #7b1113; }
+
+    .banner { background: #7b1113; color: white; text-align: center; padding: 45px 20px; border-bottom: 4px solid #d4af37; }
+    .banner h1 { font-family: Georgia, serif; font-size: 2.4rem; color: #f5cf68; }
+
+    .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+    .review-card { background: white; border-radius: 12px; padding: 25px 30px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border-left: 6px solid #d4af37; }
+    .reviewer-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .reviewer-name { font-size: 1.25rem; font-weight: bold; color: #7b1113; }
+    .stars { color: #e5a93b; font-size: 1.3rem; letter-spacing: 2px; }
+    .review-body { color: #555; font-style: italic; }
+
+    .thank-you-box { text-align: center; background: #fff8eb; border: 1px solid #d4af37; border-radius: 10px; padding: 30px; margin-top: 30px; }
+    .thank-you-box h2 { color: #7b1113; margin-bottom: 8px; }
+
+    footer { background: #1c1c1c; color: #f4f4f4; text-align: center; padding: 30px 20px; margin-top: 40px; }
+    footer .highlight { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="brand">Jeb Takeaway</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <h1>Customer Feedback</h1>
+  <p>Our customers are at the center of everything we cook and serve.</p>
+</div>
+
+<div class="container">
+  <div class="review-card">
+    <div class="reviewer-header">
+      <div class="reviewer-name">Mr. Ben</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    </div>
+    <p class="review-body">&ldquo;The food was exceptionally delicious and the restaurant was clean and comfortable. The service was friendly, fast, and welcoming. Highly recommended!&rdquo;</p>
+  </div>
+
+  <div class="review-card">
+    <div class="reviewer-header">
+      <div class="reviewer-name">Ms. Diana</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+    </div>
+    <p class="review-body">&ldquo;Jeb takeaway is a lovely place to meet friends and family. I especially enjoyed the warm hospitality, the crispy chicken, and the fresh fruit juice.&rdquo;</p>
+  </div>
+
+  <div class="thank-you-box">
+    <h2>Thank You for Visiting!</h2>
+    <p>We appreciate every guest who walks through our doors. We look forward to serving you another delicious meal soon!</p>
+  </div>
+</div>
+
+<footer>
+  <p class="highlight">JEB RESTAURANT</p>
+  <p>Good food. Good memories. Good moments.</p>
+  <p>Abayita Ababiri, Kasenyi Road | &copy; 2026 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

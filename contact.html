@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Jeb Restaurant &amp; Takeaway</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf7f2; color: #333; line-height: 1.6; }
+    header { background: #7b1113; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .brand { font-size: 24px; font-weight: bold; color: #d4af37; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+    nav a { color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; }
+    nav a:hover, nav a.active { background: #d4af37; color: #7b1113; }
+
+    .banner { background: #7b1113; color: white; text-align: center; padding: 45px 20px; border-bottom: 4px solid #d4af37; }
+    .banner h1 { font-family: Georgia, serif; font-size: 2.4rem; color: #f5cf68; }
+
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+
+    .contact-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border-top: 5px solid #7b1113; }
+    .contact-card h2 { color: #7b1113; margin-bottom: 12px; font-size: 1.35rem; }
+    .contact-card p { margin-bottom: 12px; color: #555; }
+    
+    .whatsapp-btn { display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; margin-top: 8px; }
+    .whatsapp-btn:hover { background-color: #1eb954; }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    table, th, td { border: 1px solid #ddd; }
+    th, td { padding: 10px; text-align: left; }
+    th { background: #fdf5e6; color: #7b1113; }
+
+    footer { background: #1c1c1c; color: #f4f4f4; text-align: center; padding: 30px 20px; margin-top: 40px; }
+    footer .highlight { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="brand">Jeb Takeaway</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <h1>Contact Jeb Takeaway</h1>
+  <p>We are always eager to assist you with inquiries, orders, and reservations.</p>
+</div>
+
+<div class="container">
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h2>Our Location</h2>
+      <p><strong>Jeb Restaurant &amp; Takeaway</strong><br>
+      Abayita Ababiri, along Kasenyi Road<br>
+      Entebbe, Uganda</p>
+      
+      <h2>Email Address</h2>
+      <p><a href="mailto:jebrestaurant256@gmail.com" style="color:#7b1113; text-decoration: none; font-weight: bold;">jebrestaurant256@gmail.com</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Telephone &amp; WhatsApp</h2>
+      <p>📞 +256 757 048 542<br>
+         📞 +256 782 352 962</p>
+      <a href="https://wa.me/256782352962" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+    </div>
+
+    <div class="contact-card" style="grid-column: 1 / -1;">
+      <h2>Opening Hours</h2>
+      <table>
+        <tr>
+          <th>Days</th>
+          <th>Opening Time</th>
+          <th>Closing Time</th>
+        </tr>
+        <tr>
+          <td>Monday &ndash; Sunday</td>
+          <td>8:00 AM</td>
+          <td>8:00 PM</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p class="highlight">JEB RESTAURANT</p>
+  <p>Good food. Good memories. Good moments.</p>
+  <p>Abayita Ababiri, Kasenyi Road | &copy; 2026 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

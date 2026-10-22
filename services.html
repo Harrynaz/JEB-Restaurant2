@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Jeb Restaurant</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf7f2; color: #333; line-height: 1.6; }
+    header { background: #7b1113; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .brand { font-size: 24px; font-weight: bold; color: #d4af37; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+    nav a { color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; }
+    nav a:hover, nav a.active { background: #d4af37; color: #7b1113; }
+
+    .banner { background: #7b1113; color: white; text-align: center; padding: 45px 20px; border-bottom: 4px solid #d4af37; }
+    .banner h1 { font-family: Georgia, serif; font-size: 2.4rem; color: #f5cf68; }
+
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+    
+    .service-card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 5px solid #7b1113; display: flex; flex-direction: column; }
+    .service-card h2 { color: #7b1113; font-size: 1.4rem; margin-bottom: 15px; }
+    .service-card p { color: #555; margin-bottom: 15px; flex-grow: 1; }
+    .service-card ul { list-style: square; padding-left: 20px; color: #444; }
+    .service-card ul li { margin-bottom: 6px; }
+
+    footer { background: #1c1c1c; color: #f4f4f4; text-align: center; padding: 30px 20px; margin-top: 40px; }
+    footer .highlight { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="brand">Jeb Takeaway</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <h1>Our Services</h1>
+  <p>Dedicated to delivering delicious dishes and welcoming hospitality everywhere.</p>
+</div>
+
+<div class="container">
+  <div class="services-grid">
+    <div class="service-card">
+      <h2>1. Dine-In Experience</h2>
+      <p>Enjoy your favorite dishes freshly prepared and served in our clean, relaxing, and ambient dining hall.</p>
+      <ul>
+        <li>Friendly table service</li>
+        <li>Clean, hygienic seating</li>
+        <li>Family and group spaces</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>2. Express Takeaway</h2>
+      <p>Need great food on the go? We securely package hot meals quickly so you can take the taste home or back to work.</p>
+      <ul>
+        <li>Fast order packaging</li>
+        <li>Careful spill-proof boxes</li>
+        <li>Advance phone ordering</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>3. Outside Catering</h2>
+      <p>Let our culinary staff handle the food for your private, family, church, or corporate gatherings.</p>
+      <ul>
+        <li>Custom event menus</li>
+        <li>Live muchomo grills</li>
+        <li>Buffet service management</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>4. Events &amp; Parties</h2>
+      <p>Host your intimate celebrations right at Jeb Restaurant with curated decor and specialty meals.</p>
+      <ul>
+        <li>Birthday parties</li>
+        <li>Family get-togethers</li>
+        <li>Business luncheon meetings</li>
+        <li>Evening social sessions</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p class="highlight">JEB RESTAURANT</p>
+  <p>Good food. Good memories. Good moments.</p>
+  <p>Abayita Ababiri, Kasenyi Road | &copy; 2026 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

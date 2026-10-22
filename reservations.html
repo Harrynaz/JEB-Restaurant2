@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Reservation - Jeb Restaurant</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf7f2; color: #333; line-height: 1.6; }
+    header { background: #7b1113; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .brand { font-size: 24px; font-weight: bold; color: #d4af37; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+    nav a { color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; }
+    nav a:hover, nav a.active { background: #d4af37; color: #7b1113; }
+
+    .banner { background: #7b1113; color: white; text-align: center; padding: 45px 20px; border-bottom: 4px solid #d4af37; }
+    .banner h1 { font-family: Georgia, serif; font-size: 2.4rem; color: #f5cf68; }
+
+    .container { max-width: 750px; margin: auto; padding: 40px 20px; }
+    .form-card { background: white; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 5px solid #7b1113; }
+    .form-card p { margin-bottom: 25px; color: #555; }
+
+    .form-group { margin-bottom: 18px; }
+    label { display: block; font-weight: 600; color: #7b1113; margin-bottom: 6px; }
+    input[type="text"], input[type="email"], select, input[type="date"], input[type="time"], textarea {
+      width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #d4af37; box-shadow: 0 0 5px rgba(212,175,55,0.4); }
+    
+    .form-row { display: flex; flex-direction: column; gap: 15px; }
+    @media(min-width: 600px) { .form-row { flex-direction: row; } .form-row .form-group { flex: 1; } }
+
+    .submit-btn { width: 100%; background: #7b1113; color: white; padding: 14px; font-size: 1.1rem; font-weight: bold; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s; margin-top: 10px; }
+    .submit-btn:hover { background: #d4af37; color: #7b1113; }
+
+    footer { background: #1c1c1c; color: #f4f4f4; text-align: center; padding: 30px 20px; margin-top: 40px; }
+    footer .highlight { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="brand">Jeb Takeaway</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html" class="active">Reservations</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <h1>Book a Table</h1>
+  <p>Reserve in advance and let our team prepare for your special visit.</p>
+</div>
+
+<div class="container">
+  <div class="form-card">
+    <p>Please complete this quick reservation form to book your dining table.</p>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests:</label>
+          <select id="guests" name="guests">
+            <option>1 Person</option>
+            <option>2 People</option>
+            <option>3 People</option>
+            <option>4 People</option>
+            <option>5 People</option>
+            <option>6+ People (Group)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Reservation Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Reservation Time:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="requests">Special Requests / Preferences:</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Let us know if you need high chairs, dietary requests, or birthday setups"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Confirm Table Booking</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p class="highlight">JEB RESTAURANT</p>
+  <p>Good food. Good memories. Good moments.</p>
+  <p>Abayita Ababiri, Kasenyi Road | &copy; 2026 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
